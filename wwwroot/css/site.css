@@ -1,0 +1,58 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.dominotes-logo {
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  color: black;
+  background: linear-gradient(to right, var(--bs-primary) 50%, var(--bs-secondary) 50%);
+  border-radius: 4px;
+  border: 1px solid black;
+  display: inline-block;
+  position: relative;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.dominotes-logo::before,
+.dominotes-logo::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: rgb(79, 130, 250);
+  border-radius: 50%;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.dominotes-logo::before {
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.dominotes-logo::after {
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
